@@ -1,0 +1,7 @@
+raw_seal_population:
+  type: CSVLocalDataSet
+  filepath: data/01_raw/seal_population.csv
+  load_args:
+    sep: \t
+    engine: python
+    skiprows: 1
