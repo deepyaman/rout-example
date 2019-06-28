@@ -115,11 +115,7 @@ def create_catalog(config: ConfigLoader, **kwargs) -> DataCatalog:
     return catalog
 
 
-def main(
-    tags: Iterable[str] = None,
-    env: str = None,
-    runner: str = None,
-):
+def main(tags: Iterable[str] = None, env: str = None, runner: str = None):
     """Application main entry point.
 
     Args:
