@@ -126,6 +126,20 @@ def install():
     python_call("pip", ["install", "-U", "-r", "src/requirements.txt"])
 
 
+@cli.command()
+def lint():
+    """Check the Python code quality."""
+    python_call(
+        "black", ["--check", "--verbose", "src/rout_example", "src/tests", "kedro_cli.py"]
+    )
+    python_call("isort", ["-rc", "src/rout_example", "src/tests", "kedro_cli.py"])
+    python_call("pylint", ["-j", "0", "src/rout_example", "kedro_cli.py"])
+    python_call(
+        "pylint",
+        ["-j", "0", "--disable=missing-docstring,redefined-outer-name", "src/tests"],
+    )
+
+
 @forward_command(cli, forward_help=True)
 def ipython(args):
     """Open IPython with project specific variables loaded."""
