@@ -1,0 +1,3 @@
+prm_seal_population:
+  type: CSVLocalDataSet
+  filepath: data/03_primary/seal_population.csv
