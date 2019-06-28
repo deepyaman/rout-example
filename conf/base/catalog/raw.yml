@@ -3,5 +3,15 @@ raw_seal_population:
   filepath: data/01_raw/seal_population.csv
   load_args:
     sep: \t
+    usecols: [0, 1]
+    engine: python
+    skiprows: 1
+
+raw_seal_population.1:
+  type: CSVLocalDataSet
+  filepath: data/01_raw/seal_population.csv
+  load_args:
+    sep: \t
+    usecols: [2, 3]
     engine: python
     skiprows: 1

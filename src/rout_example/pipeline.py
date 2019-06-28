@@ -29,6 +29,8 @@
 
 from kedro.pipeline import Pipeline
 
+from rout_example.pipelines import int_pipeline
+
 # Here you can define your data-driven pipeline by importing your functions
 # and adding them to the pipeline as follows:
 #
@@ -57,6 +59,6 @@ def create_pipeline(**kwargs):
 
     """
 
-    pipeline = Pipeline([])
+    pipeline = Pipeline([int_pipeline])
 
     return pipeline

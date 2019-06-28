@@ -1,0 +1,3 @@
+int_seal_population:
+  type: CSVLocalDataSet
+  filepath: data/02_intermediate/seal_population.csv
