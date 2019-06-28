@@ -1,5 +1,7 @@
 # ROUT Example
 
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
 ## Overview
 
 This is your new Kedro project, which was generated using `Kedro 0.14.3` by running:
