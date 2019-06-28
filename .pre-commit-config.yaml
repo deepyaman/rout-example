@@ -1,0 +1,7 @@
+repos:
+-   repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+    - id: black
+      files: ^(src/rout_example/|src/tests/|kedro_cli.py)
+      language_version: python3.7
